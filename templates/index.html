@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en" data-framework="typescript">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>桌面划词</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <input type="text" id="txtAnimal" placeholder="请输入动物" />
+    <Button id="btnClick" onclick="indexJs.callMessage()">点击</Button>
+    <!-- built files will be auto injected -->
+    <script type="text/javascript">
+        var indexJs = {
+            ele: {
+                btnClick: $("#btnClick"),
+                txtAnimal: $("#txtAnimal")
+            },
+            onPageLoad: function () {
+                this.initLoad();
+                this.initEvent();
+            },
+            initLoad: function () { },
+            initEvent: function () {
+                var self = this;
+                self.btnClick.bind("click", self.callMessage);
+            },
+            callMessage: function () {
+                var self = this;
+
+                var info = {
+                    name: self.ele.txtAnimal.val()
+                }
+                var input = JSON.stringify(info);
+
+                dotNetMessage.addanimal(input).then(function (res) {
+                    alert(JSON.stringify(res));
+                });
+
+            },
+            jsMethod: function (msg) {
+                alert("这是个js方法：" + msg)
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

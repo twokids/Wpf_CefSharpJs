@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CefSharpJs", "CefSharpJs.csproj", "{57A43BDF-E214-4302-9853-6B21285D6A5F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Debug|x86.ActiveCfg = Debug|x86
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Debug|x86.Build.0 = Debug|x86
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Release|x86.ActiveCfg = Release|x86
+		{57A43BDF-E214-4302-9853-6B21285D6A5F}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A013381-70CD-474C-B297-4B3CDE3A13CA}
+	EndGlobalSection
+EndGlobal
